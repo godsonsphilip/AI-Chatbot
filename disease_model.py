@@ -216,10 +216,13 @@ def tree_to_code(tree, feature_names):
         print("----------------------------------------------------------------------------------------------------------------------------------")
 pass
 
+# Initialize the text-to-speech engine
+engine = pyttsx3.init()
+
 def text_to_speech(text):
     # Set properties (optional)
-    engine.setProperty('rate', 150)    # Speed percent (can go over 100)
-    engine.setProperty('volume', 0.9)  # Volume 0-1
+    engine.setProperty('rate', 100)    # Speed percent (can go over 100)
+    engine.setProperty('volume', 1)  # Volume 0-1
 
     # Convert text to speech
     engine.say(text)
