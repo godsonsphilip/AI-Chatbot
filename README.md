@@ -70,3 +70,7 @@ If you encounter any issues while running the chatbot, try the following trouble
 ## Contact Information
 
 For questions, feedback, or contributions, please contact Godson at godsonsp04@gmail.com
+
+## License
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
