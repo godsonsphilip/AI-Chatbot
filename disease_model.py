@@ -1,11 +1,17 @@
-# disease_model.py
-
-# Include all relevant imports from your notebook
-from sklearn.tree import _tree
+import re
+import csv
+from sklearn.tree import DecisionTreeClassifier, _tree
+from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
 import pyttsx3
+
+
 engine = pyttsx3.init()
+
+severityDictionary = {}
+description_list = {}  # Make sure this is defined
+precautionDictionary = {}
 
 # Add all the necessary functions you used for processing the data and making predictions
 
@@ -217,7 +223,7 @@ def tree_to_code(tree, feature_names):
 pass
 
 # Initialize the text-to-speech engine
-engine = pyttsx3.init()
+
 
 def text_to_speech(text):
     # Set properties (optional)
